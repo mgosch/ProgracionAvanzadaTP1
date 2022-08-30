@@ -57,5 +57,22 @@ namespace ConsoleApp1
         {
             return bool.TryParse(a, out bool resultado);
         }
+
+        public static int ConvertDoubleAInt(double a)
+        {
+            return (int)a;
+        }
+
+        public static decimal ConvertIntADecimal(int a)
+        {
+            return a;
+        }
+
+
+
+        public static short ConvertIntAShort(int a)
+        {
+            return (short)a;
+        }
     }
 }

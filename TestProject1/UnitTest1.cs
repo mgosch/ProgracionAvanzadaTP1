@@ -77,7 +77,6 @@ namespace TestProject1
             Assert.AreEqual(esperado, resultado);
         }
 
-
         [TestMethod]
         public void TestMethod_6()
         {
@@ -112,7 +111,6 @@ namespace TestProject1
             bool resultado = Introduccion1.TryParseado(falso);
             // Entonces            
             Assert.AreEqual(esperado, resultado);
-
         }
 
         [TestMethod]
@@ -125,7 +123,42 @@ namespace TestProject1
             bool resultado = Introduccion1.TryParseado(falso);
             // Entonces            
             Assert.AreEqual(esperado, resultado);
+        }
 
+        [TestMethod]
+        public void TestMethod_8()
+        {
+            // Dado
+            var number = 344.4;
+            int esperado = 344;
+            // Cuando
+            int resultado = Introduccion1.ConvertDoubleAInt(number);
+            // Entonces            
+            Assert.AreEqual(esperado, resultado);
+        }
+
+       [TestMethod]
+        public void TestMethod_8_1()
+        {
+            // Dado
+            var number = 10;
+            decimal esperado = 10;
+            // Cuando
+            decimal resultado = Introduccion1.ConvertIntADecimal(number);
+            // Entonces            
+            Assert.AreEqual(esperado, resultado)
+        }
+
+       [TestMethod]
+        public void TestMethod_8_2()
+        {
+            // Dado
+            int number = 443444;
+            short esperado = -15308;
+            // Cuando
+            short resultado = Introduccion1.ConvertIntAShort(number);
+            // Entonces            
+            Assert.AreEqual(esperado, resultado);
         }
     }
 }
