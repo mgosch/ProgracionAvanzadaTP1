@@ -35,7 +35,7 @@ namespace TestProject1
         public void TestMethod3()
         {
             // Dado            
-            string esperado = DateTime.Now.ToString("dd-MM-yy hh:mm:ss");
+            string esperado = DateTime.Now.ToString("dd-MM-yy hh:mm");
             // Cuando            
             string resultado = Introduccion1.ObtenerFechaActual();
             // Entonces            
