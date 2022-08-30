@@ -32,5 +32,16 @@ namespace TestProject1
             // Entonces
             Assert.AreEqual(resultado, esperado);
         }
+
+        [TestMethod]
+        public void TestMethod3()
+        {
+            // Dado            
+            string esperado = DateTime.Now.ToString("dd-MM-yy hh:mm:ss");
+            // Cuando            
+            string resultado = Introduccion1.ObtenerFechaActual();
+            // Entonces            
+            Assert.AreEqual(resultado, esperado);
+        }
     }
 }
