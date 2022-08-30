@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    enum Dia { Domingo = 1, Lunes = 2, Martes = 3, Miercoles = 4, Jueves = 5, Viernes = 6, Sabado = 7 }
+    enum Dia{ Domingo = 1, Lunes = 2, Martes = 3, Miercoles = 4, Jueves = 5, Viernes = 6, Sabado = 7 }
+    public enum Color { Blanco, Azul, Negro}
     public class Introduccion1
 
     {
@@ -71,6 +72,24 @@ namespace ConsoleApp1
         public static short ConvertIntAShort(int a)
         {
             return (short)a;
+        }
+
+        public static string SwitchColor(Color color)
+        {
+            switch (color)
+            {
+                case Color.Blanco:
+                    return "Este es Blanco";
+
+               case Color.Azul:
+                    return "Este es Azul";
+
+               case Color.Negro:
+                    return "Este es Negro";
+
+               default:
+                    return "Color no encontrado";
+            }
         }
     }
 }

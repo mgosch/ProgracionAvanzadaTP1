@@ -160,5 +160,17 @@ namespace TestProject1
             // Entonces            
             Assert.AreEqual(esperado, resultado);
         }
+
+        [TestMethod]
+        public void TestMethod_9()
+        {
+            // Dado
+            Color miColor = Color.Azul;
+            string esperado = "Este es Azul";
+            // Cuando
+            string resultado = Introduccion1.SwitchColor(miColor);
+            // Entonces            
+            Assert.AreEqual(esperado, resultado);
+        }
     }
 }
