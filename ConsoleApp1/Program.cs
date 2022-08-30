@@ -23,5 +23,17 @@ namespace ConsoleApp1
             string resultado = cadena.Substring(0, cadena.Length - 4);
             return resultado;
         }
+
+        public static string ObtenerFechaActual()
+        {
+            string date = DateTime.Now.ToString("dd-MM-yy hh:mm:ss");
+            return date;
+        }
+
+        // Este es el comentario
+
+        /**
+         * Este es un super comentario
+         */
     }
 }
