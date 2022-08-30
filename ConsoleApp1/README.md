@@ -23,3 +23,12 @@ Por otro lado, si se realiza el mismo método pero intentando convertir un Int 1
 Si al método bool.TryParse se le pasa como argumento un string ya sea “true” o “false”, la conversión dará como resultado un boolean de valor True.
 En cambio si al mismo método se le indica como argumento un string “1” o “0”, , la conversión dará como resultado un boolean de valor False.
 Por otro lado si se le indica como argumento un int 1 o 0, se recibe un error de compilación ya que el método bool.TryParse acepta como argumento solo datos del tipo sting: “The best overloaded method match for `bool.TryParse(string, out bool)' has some invalid arguments”
+
+# Respuesta Conversiones 2
+
+2.a) Muestra el número entero correspondiente.
+
+2.b) No muestra los decimales porque no tiene decimales que mostrar.
+
+2.c) Convierte el entero al tipo de dato short cuyos valores oscilan entre el -32.768 y 32.768
+
