@@ -41,5 +41,16 @@ namespace TestProject1
             // Entonces            
             Assert.AreEqual(resultado, esperado);
         }
+
+        [TestMethod]
+        public void TestMethod4()
+        {
+            // Dado            
+            string esperado = "Domingo";
+            // Cuando            
+            string resultado = Introduccion1.ObtenerDiaSemana(1);
+            // Entonces            
+            Assert.AreEqual(resultado, esperado);
+        }
     }
 }

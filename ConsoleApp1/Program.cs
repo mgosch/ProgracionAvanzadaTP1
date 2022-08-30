@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
+    enum Dia { Domingo = 1, Lunes = 2, Martes = 3, Miercoles = 4, Jueves = 5, Viernes = 6, Sabado = 7 }
     public class Introduccion1
 
     {
@@ -35,5 +36,12 @@ namespace ConsoleApp1
         /**
          * Este es un super comentario
          */
+
+        public static string ObtenerDiaSemana(int i)
+        {
+            Dia dia = (Dia)i;
+            return dia.ToString();
+        }
+
     }
 }
