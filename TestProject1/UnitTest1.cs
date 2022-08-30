@@ -46,7 +46,7 @@ namespace TestProject1
         public void TestMethod4()
         {
             // Dado            
-            string esperado = "Domingo";
+            string esperado = "Hoy es Domingo";
             // Cuando            
             string resultado = Introduccion1.ObtenerDiaSemana(1);
             // Entonces            

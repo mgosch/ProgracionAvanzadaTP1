@@ -40,7 +40,7 @@ namespace ConsoleApp1
         public static string ObtenerDiaSemana(int i)
         {
             Dia dia = (Dia)i;
-            return dia.ToString();
+            return "Hoy es " + dia.ToString();
         }
 
          public static bool ConvertirABoolean(int a)
