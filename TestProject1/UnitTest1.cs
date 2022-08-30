@@ -76,5 +76,18 @@ namespace TestProject1
             // Entonces            
             Assert.AreEqual(resultado, esperado);
         }
+
+        [TestMethod]
+        public void TestMethod_7()
+        {
+            // Dado
+            string falso = "falsete";
+            bool esperado = false;
+            // Cuando
+            bool resultado = Introduccion1.TryParseado(falso);
+            // Entonces            
+            Assert.AreEqual(resultado, esperado);
+
+        }
     }
 }

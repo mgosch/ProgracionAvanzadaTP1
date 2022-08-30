@@ -50,7 +50,12 @@ namespace ConsoleApp1
 
         public static bool BoolParseado(string a)
         {
-            return Boolean.Parse(a);
+            return bool.Parse(a);
+        }
+
+        public static bool TryParseado(string a)
+        {
+            return bool.TryParse(a, out bool resultado);
         }
     }
 }
