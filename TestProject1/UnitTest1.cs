@@ -1,4 +1,4 @@
-ciertousing ConsoleApp1;
+using ConsoleApp1;
 
 namespace TestProject1
 {
@@ -21,16 +21,16 @@ namespace TestProject1
         }
 
         [TestMethod]
-        public void TestMethod2()
-        {
-            // Dado
+        public void TestMethod2() {            
+            // Dado            
             string a = "caramelo";
-
-            // Cuando
-            int resultado = Introduccion1.CortarCadena(a);
-
-            // Entonces
+            string esperado = "cara";
+            // Cuando            
+            string resultado = Introduccion1.CortarCadena(a);
+            // Entonces            
             Assert.AreEqual(resultado, esperado);
         }
+
+
     }
 }
