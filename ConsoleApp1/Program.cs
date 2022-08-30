@@ -26,7 +26,7 @@ namespace ConsoleApp1
 
         public static string ObtenerFechaActual()
         {
-            string date = DateTime.Now.ToString("dd-MM-yy hh:mm:ss");
+            string date = DateTime.Now.ToString("dd-MM-yy hh:mm");
             return date;
         }
 
