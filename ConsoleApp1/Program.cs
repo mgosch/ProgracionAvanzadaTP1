@@ -43,11 +43,14 @@ namespace ConsoleApp1
             return "Hoy es " + dia.ToString();
         }
 
-         public static bool ConvertirABoolean(int a)
+        public static bool ConvertirABoolean(int a)
         {
             return Convert.ToBoolean(a);
         }
 
-         
+        public static bool BoolParseado(string a)
+        {
+            return Boolean.Parse(a);
+        }
     }
 }
