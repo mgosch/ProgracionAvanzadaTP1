@@ -68,8 +68,6 @@ namespace ConsoleApp1
             return a;
         }
 
-
-
         public static short ConvertIntAShort(int a)
         {
             return (short)a;

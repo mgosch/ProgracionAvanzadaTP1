@@ -146,7 +146,7 @@ namespace TestProject1
             // Cuando
             decimal resultado = Introduccion1.ConvertIntADecimal(number);
             // Entonces            
-            Assert.AreEqual(esperado, resultado)
+            Assert.AreEqual(esperado, resultado);
         }
 
        [TestMethod]
