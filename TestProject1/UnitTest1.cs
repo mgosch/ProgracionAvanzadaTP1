@@ -17,7 +17,7 @@ namespace TestProject1
             int resultado = Introduccion1.Sumar(a, b) ;
 
             // Entonces
-            Assert.AreEqual(resultado, esperado);
+            Assert.AreEqual(esperado, resultado);
         }
 
         [TestMethod]
@@ -28,7 +28,7 @@ namespace TestProject1
             // Cuando            
             string resultado = Introduccion1.CortarCadena(a);
             // Entonces            
-            Assert.AreEqual(resultado, esperado);
+            Assert.AreEqual(esperado, resultado);
         }
 
         [TestMethod]
@@ -39,7 +39,7 @@ namespace TestProject1
             // Cuando            
             string resultado = Introduccion1.ObtenerFechaActual();
             // Entonces            
-            Assert.AreEqual(resultado, esperado);
+            Assert.AreEqual(esperado, resultado);
         }
 
         [TestMethod]
@@ -50,7 +50,7 @@ namespace TestProject1
             // Cuando            
             string resultado = Introduccion1.ObtenerDiaSemana(1);
             // Entonces            
-            Assert.AreEqual(resultado, esperado);
+            Assert.AreEqual(esperado, resultado);
         }
 
         [TestMethod]
@@ -62,8 +62,21 @@ namespace TestProject1
             // Cuando
             bool resultado = Introduccion1.ConvertirABoolean(verdadero);
             // Entonces            
-            Assert.AreEqual(resultado, esperado);
+            Assert.AreEqual(esperado, resultado);
         }
+
+        [TestMethod]
+        public void TestMethod_5_1()
+        {
+            // Dado
+            int falso = 0;
+            bool esperado = false;
+            // Cuando
+            bool resultado = Introduccion1.ConvertirABoolean(falso);
+            // Entonces            
+            Assert.AreEqual(esperado, resultado);
+        }
+
 
         [TestMethod]
         public void TestMethod_6()
@@ -74,7 +87,19 @@ namespace TestProject1
             // Cuando
             bool resultado = Introduccion1.BoolParseado(falso);
             // Entonces            
-            Assert.AreEqual(resultado, esperado);
+            Assert.AreEqual(esperado, resultado);
+        }
+
+        [TestMethod]
+        public void TestMethod_6_1()
+        {
+            // Dado
+            string verdadero = "true";
+            bool esperado = true;
+            // Cuando
+            bool resultado = Introduccion1.BoolParseado(verdadero);
+            // Entonces            
+            Assert.AreEqual(esperado, resultado);
         }
 
         [TestMethod]
@@ -86,7 +111,20 @@ namespace TestProject1
             // Cuando
             bool resultado = Introduccion1.TryParseado(falso);
             // Entonces            
-            Assert.AreEqual(resultado, esperado);
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+        [TestMethod]
+        public void TestMethod_7_1()
+        {
+            // Dado
+            string falso = "false";
+            bool esperado = true;
+            // Cuando
+            bool resultado = Introduccion1.TryParseado(falso);
+            // Entonces            
+            Assert.AreEqual(esperado, resultado);
 
         }
     }
