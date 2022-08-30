@@ -1,4 +1,4 @@
-using ConsoleApp1;
+ciertousing ConsoleApp1;
 
 namespace TestProject1
 {
@@ -15,6 +15,19 @@ namespace TestProject1
 
             // Cuando
             int resultado = Introduccion1.Sumar(a, b) ;
+
+            // Entonces
+            Assert.AreEqual(resultado, esperado);
+        }
+
+        [TestMethod]
+        public void TestMethod2()
+        {
+            // Dado
+            string a = "caramelo";
+
+            // Cuando
+            int resultado = Introduccion1.CortarCadena(a);
 
             // Entonces
             Assert.AreEqual(resultado, esperado);
