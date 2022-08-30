@@ -52,5 +52,17 @@ namespace TestProject1
             // Entonces            
             Assert.AreEqual(resultado, esperado);
         }
+
+        [TestMethod]
+        public void TestMethod_5()
+        {
+            // Dado
+            int verdadero = 1;
+            bool esperado = true;
+            // Cuando
+            bool resultado = Introduccion1.ConvertirABoolean(verdadero);
+            // Entonces            
+            Assert.AreEqual(resultado, esperado);
+        }
     }
 }

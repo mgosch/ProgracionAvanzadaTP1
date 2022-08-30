@@ -43,5 +43,10 @@ namespace ConsoleApp1
             return dia.ToString();
         }
 
+         public static bool ConvertirABoolean(int a)
+        {
+            return Convert.ToBoolean(a);
+        }
+
     }
 }
