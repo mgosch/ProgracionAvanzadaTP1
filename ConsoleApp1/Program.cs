@@ -102,5 +102,14 @@ namespace ConsoleApp1
                 return "Error";
             }
         }
+
+        public static string WhileIncrementar(int a)
+        {
+            while (a < 50)
+            {
+                a += 5;
+            }
+            return "Este es ahora el valor de " + a;
+        }
     }
 }

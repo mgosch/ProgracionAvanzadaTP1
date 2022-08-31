@@ -197,5 +197,17 @@ namespace TestProject1
             Assert.AreEqual(esperado, resultado);
 
         }
+
+        [TestMethod]
+        public void TestMethod_11()
+        {
+            // Dado
+            int number = 8;
+            string esperado = "Este es ahora el valor de 53";
+            // Cuando
+            string resultado = Introduccion1.WhileIncrementar(number);
+            // Entonces            
+            Assert.AreEqual(esperado, resultado);
+        }
     }
 }
