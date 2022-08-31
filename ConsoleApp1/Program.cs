@@ -91,5 +91,16 @@ namespace ConsoleApp1
                     return "Color no encontrado";
             }
         }
+        public static string MayorQue10(int a)
+        {
+            if (a > 10)
+            {
+                return "Es mayor a 10";
+            }
+            else
+            {
+                return "Error";
+            }
+        }
     }
 }

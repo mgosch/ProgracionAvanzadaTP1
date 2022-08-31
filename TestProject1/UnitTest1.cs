@@ -172,5 +172,30 @@ namespace TestProject1
             // Entonces            
             Assert.AreEqual(esperado, resultado);
         }
+        [TestMethod]
+        public void TestMethod_10()
+        {
+            // Dado
+            int number = 59;
+            string esperado = "Es mayor a 10";
+            // Cuando
+            string resultado = Introduccion1.MayorQue10(number);
+            // Entonces            
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+        [TestMethod]
+        public void TestMethod_10_1()
+        {
+            // Dado
+            int number = 5;
+            string esperado = "Error";
+            // Cuando
+            string resultado = Introduccion1.MayorQue10(number);
+            // Entonces            
+            Assert.AreEqual(esperado, resultado);
+
+        }
     }
 }
