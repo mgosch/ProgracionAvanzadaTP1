@@ -37,5 +37,4 @@ Por otro lado si se le indica como argumento un int 1 o 0, se recibe un error de
 
 2.c) Convierte el entero al tipo de dato short cuyos valores oscilan entre el -32.768 y 32.768
 
-2.d) test.
 
